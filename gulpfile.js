@@ -6,7 +6,7 @@ var cssnano = require('gulp-cssnano')
 var htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
 
-var templateParser = require('./templateParser')
+var templateParser = require('./index')
 
 gulp.task('parse', function() {
     return gulp.src(['src/components/*.html'])
