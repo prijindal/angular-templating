@@ -2,6 +2,10 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     concat = require('gulp-concat');
 
+var cssnano = require('gulp-cssnano')
+var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
+
 var templateParser = require('./templateParser')
 
 gulp.task('parse', function() {
@@ -29,6 +33,17 @@ gulp.task('concat:css',['concat:html'],function() {
 })
 
 gulp.task('build',['concat:css'], function() {
+    gulp.src('build/styles.css')
+    .pipe(cssnano())
+    .pipe(gulp.dest('build'))
+
+    gulp.src('build/index.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('build'))
+
+    gulp.src('build/app.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('build'))
 
 })
 
