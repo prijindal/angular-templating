@@ -1,8 +1,8 @@
 {
-  "name": "templating",
+  "name": "angular-webcomponents",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/prijindal/angular-templating#readme",
   "dependencies": {
+    "angular": "^1.4.9",
     "browser-sync": "^2.11.1",
     "concat-with-sourcemaps": "^1.0.4",
     "gulp": "^3.9.0",
