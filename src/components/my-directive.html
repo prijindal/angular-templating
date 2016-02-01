@@ -1,0 +1,21 @@
+<dom-module id="my-directive">
+  <style>
+    h1 {
+      color:red;
+    }
+    h2 {
+      color:blue;
+    }
+  </style>
+  <template>
+    <h1>Hello</h1>
+  </template>
+  <script>
+  angular.module('MyApp')
+  .directive('myDirective', function() {
+      return {
+          restrict:'AE'
+      }
+  })
+  </script>
+</dom-module>

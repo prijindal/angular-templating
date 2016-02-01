@@ -1,0 +1,26 @@
+{
+  "name": "templating",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prijindal/angular-templating.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prijindal/angular-templating/issues"
+  },
+  "homepage": "https://github.com/prijindal/angular-templating#readme",
+  "dependencies": {
+    "browser-sync": "^2.11.1",
+    "concat-with-sourcemaps": "^1.0.4",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "through2": "^2.0.0"
+  }
+}

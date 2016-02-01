@@ -1,0 +1,21 @@
+<dom-module id="alternate-directive">
+  <style>
+    h1 {
+      color:yellow;
+    }
+    h2 {
+      color:green;
+    }
+  </style>
+  <template>
+    <h1>Hello Alternative</h1>
+  </template>
+  <script>
+  angular.module('MyApp')
+  .directive('alternateDirective', function() {
+      return {
+          restrict:'AE'
+      }
+  })
+  </script>
+</dom-module>
